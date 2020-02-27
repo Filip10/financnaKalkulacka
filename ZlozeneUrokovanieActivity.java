@@ -48,20 +48,18 @@ public class ZlozeneUrokovanieActivity extends AppCompatActivity {
                 int t = Integer.parseInt(tEditText.getText().toString());
 
                 if (rokRadioButton.isChecked()){
-                    float vysledok = k0 * Math.pow(1 + p / 100, t);
-                    }
-                }
-                if (mesiacRadioButton.isChecked()){
-                    float vysledok = k0 * Math.pow(1 + p / 100 / 12, 12 * t);
-                    }
-                }
-                if (denRadioButton.isChecked()){
-                    float vysledok = k0 * Math.pow(1 + p / 100 / 365, 365 * t);
-                    }
+                    float vysledok = k0 * Math.pow(double 1 + p / 100, t);
                     ktEditText.setText(vysledok + "");
+                    }
+                if (mesiacRadioButton.isChecked()){
+                    float vysledok = k0 * Math.pow(double 1 + p / 100 / 12, 12 * t);
+                    ktEditText.setText(vysledok + "");
+                    }
+                if (denRadioButton.isChecked()){
+                    float vysledok = k0 * Math.pow(double 1 + p / 100 / 365, 365 * t);
+                    ktEditText.setText(vysledok + "");
+                    }
 
-                }
-            }
         });
     }
 }
